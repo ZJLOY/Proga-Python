@@ -9,9 +9,12 @@ class Glass:
     def __init__(self, height: float, bottom_radius: float):
         """
          Создание и подготовка к работе объекта Стакан.
+         
          :param height: высота стакана
          :param bottom_radius: радиус дня стакана
+         
          Примеры:
+         
          >>> glass = Glass(50.0, 10.0)  # инициализация экземпляра класса
          """
 
@@ -30,7 +33,9 @@ class Glass:
     def count_volume(self):
         """
                 Функция которая позволяет вычислить объем стакана
+                
                 :return: Объем стакана
+                
                 Примеры:
                 >>> glass = Glass(30.0, 10.0)
                 >>> glass.count_volume()
@@ -41,7 +46,9 @@ class Glass:
         """
             Функция, которая позволяет вычислить новую высоту стакана для заданного радиуса, и такого же объема,
             как имеющийся стакан
+            
             :return: Объем стакана
+            
             Примеры:
             >>> glass = Glass(30.0, 10.0)
             >>> glass.count_another_height(15.0)
@@ -59,9 +66,12 @@ class Cube:
     def __init__(self, edge: float, water: float):
         """
          Создание и подготовка к работе объекта Куб.
+         
          :param edge: рубро куба
          :param water: количество воды внутри
+         
          Примеры:
+         
          >>> cube = Cube(50.0,10.0)  # инициализация экземпляра класса
          """
 
@@ -80,7 +90,9 @@ class Cube:
     def count_volume(self) -> float:
         """
                 Функция которая позволяет вычислить объем куба
+                
                 :return: Объем стакана
+                
                 Примеры:
                 >>> cube = Cube(30.0, 10.0)
                 >>> cube.count_volume()
@@ -90,7 +102,9 @@ class Cube:
     def is_empty_cube(self) -> bool:
         """
         Функция которая проверяет является ли куб пустым
+        
         :return: Является ли куб пустым
+        
         Примеры:
         >>> cube = Cube(30.0, 10.0)
         >>> cube.is_empty_cube()
@@ -106,9 +120,12 @@ class House:
     def __init__(self, floor: int, occupied_apartments: int):
         """
          Создание и подготовка к работе объекта Куб.
+         
          :param floor: количество этажей в доме
          :param occupied_apartments: количество занятых квартир в доме
+         
          Примеры:
+         
          >>> house = House(10,10)  # инициализация экземпляра класса
          """
 
@@ -127,7 +144,9 @@ class House:
     def count_volume(self) -> int:
         """
                 Функция которая позволяет вычислить количество квартир в доме
+                
                 :return: Количество квартир в доме
+                
                 Примеры:
                 >>> house = House(10,10)
                 >>> house.count_volume()
@@ -137,7 +156,9 @@ class House:
     def is_empty_house(self) -> bool:
         """
         Функция которая проверяет есть ли в доме свободный квартиры
+        
         :return: Является ли дом полностью заселённым пустым
+        
         Примеры:
         >>> house = House(10,10)
         >>> house.is_empty_house()
